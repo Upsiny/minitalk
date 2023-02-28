@@ -1,0 +1,14 @@
+.DS_store
+.vs_code
+*.o
+*.a
+*.d
+.*.sw*
+*.dSYM
+*.tar.gz
+*.tgz
+*.png
+a.out
+
+client
+server
