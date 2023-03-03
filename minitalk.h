@@ -6,7 +6,7 @@
 /*   By: hguillau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:28:06 by hguillau          #+#    #+#             */
-/*   Updated: 2023/02/28 15:33:48 by hguillau         ###   ########.fr       */
+/*   Updated: 2023/03/03 10:46:29 by hguillau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <signal.h>
-# include <stdio.h>
 
 // SERVEUR
 char	*ft_strjoin(char const *s1, char const *s2);

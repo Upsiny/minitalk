@@ -6,7 +6,7 @@
 /*   By: hguillau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:22:08 by hguillau          #+#    #+#             */
-/*   Updated: 2023/03/03 09:53:28 by hguillau         ###   ########.fr       */
+/*   Updated: 2023/03/03 10:46:11 by hguillau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ void	ft_to_print(int signal)
 	bit++;
 	if (bit == 7)
 	{
-		printf("i = %d | ", i);
 		s1 = ft_strchar(s1, i);
 		if (i == 0)
 		{
