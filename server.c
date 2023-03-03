@@ -6,7 +6,7 @@
 /*   By: hguillau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:22:08 by hguillau          #+#    #+#             */
-/*   Updated: 2023/02/28 17:45:12 by hguillau         ###   ########.fr       */
+/*   Updated: 2023/03/03 09:53:28 by hguillau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_to_print(int signal)
 	static int	i;
 	static int	bit;
 	static int	j;
-	
+
 	i += ((signal & 1) << bit);
 	bit++;
 	if (bit == 7)
@@ -55,6 +55,7 @@ void	ft_to_print(int signal)
 			ft_putstr(s1);
 			ft_putchar('\n');
 			free(s1);
+			s1 = NULL;
 		}
 		i = 0;
 		bit = 0;
@@ -72,6 +73,5 @@ int	main(void)
 		signal(SIGUSR2, ft_to_print);
 		sleep(1);
 	}
-	system("leaks server >&2");
 	return (0);
 }

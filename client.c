@@ -6,13 +6,13 @@
 /*   By: hguillau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:22:16 by hguillau          #+#    #+#             */
-/*   Updated: 2023/02/28 17:44:38 by hguillau         ###   ########.fr       */
+/*   Updated: 2023/03/03 09:53:16 by hguillau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void	ft_error()
+void	ft_error(void)
 {
 	ft_putstr("not a valid PID");
 	ft_putchar('\n');
@@ -62,6 +62,5 @@ int	main(int ac, char **av)
 	if (ft_isnum(av[1]) == 1 || ft_atoi(av[1]) <= 0)
 		ft_error();
 	ft_to_send(ft_atoi(av[1]), av[2], ft_strlen(av[2]));
-	system("leaks client >&2");
 	return (0);
 }
